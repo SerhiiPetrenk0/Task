@@ -1,0 +1,103 @@
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.styled-table a {
+    text-decoration: none;
+}
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    overflow:hidden
+}
+.styled-table thead tr th img {
+    margin-left: 15px;
+    height: 12px;
+    filter: invert(100%);
+}
+.styled-table thead tr th div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    pointer-events: none;
+}
+.styled-table thead tr th:hover {
+    background-color: #007e65;
+}
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    transition: .3s;
+    cursor: pointer;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+    cursor: pointer;
+    transition: .3s;
+}
+.styled-table tbody tr:hover {
+    background-color: #b1b1b1;
+}
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+.styled-table tbody tr:nth-of-type(even):hover {
+    background-color: #b1b1b1;
+}
+
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.table-title{
+    min-width: 200px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+}
+.btn-time{
+    position: absolute;
+    display: none;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .table-title{
+        display: flex;
+        justify-content: center;
+    }
+    .btn-time{
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        width: 110px;
+        height: 40px;
+        border-radius: 10px;
+        opacity: .8;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        background-color:#009879;
+        font-size: 0.9em;
+        font-family: sans-serif;
+        color: #ffffff;
+        font-weight: 700;
+    }
+  }
